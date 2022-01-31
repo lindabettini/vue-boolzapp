@@ -25,6 +25,12 @@ img {
 	cursor: pointer;
 }
 
+#top-header .icons-btn,
+#chat-section header .icons-btn {
+	font-size: 10px;
+	cursor: pointer;
+}
+
 /* ~ UTILITIES  */
 
 .grey-color {
@@ -48,10 +54,6 @@ img {
 	background-color: #eaeaea;
 }
 
-#top-header .icons-btn {
-	font-size: 10px;
-	cursor: pointer;
-}
 /* < Bottom Header */
 
 #bottom-header {
@@ -85,7 +87,7 @@ img {
 #search-bar-container.btn-check:focus + .btn,
 .btn:focus {
 	outline: 0;
-	box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+	box-shadow: 0 0 0 0rem;
 }
 
 #search-bar {
