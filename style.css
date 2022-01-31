@@ -61,6 +61,7 @@ img {
 
 /* < Search Bar */
 #search-bar-container {
+  height: 30px;
   background-color: white;
 }
 
@@ -79,7 +80,7 @@ img {
 
 #contacts-section .main {
   background-color: #eaeaea;
-  height: calc(95vh - 125px);
+  height: calc(95vh - 130px);
 }
 
 /* ~ CHAT SECTION */
