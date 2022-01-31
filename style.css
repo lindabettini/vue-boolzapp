@@ -89,7 +89,7 @@ img {
 /* < Contacts-section _Main_ */
 
 #contacts-section .main {
-	background-color: #eaeaea;
+	background-color: white;
 	height: calc(95vh - 130px);
 }
 
