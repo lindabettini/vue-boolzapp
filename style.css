@@ -1,30 +1,30 @@
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .container-fluid {
-  max-width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgb(0, 150, 136) 20vh, rgb(217, 219, 212) 20vh, rgb(217, 219, 212));
+	max-width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgb(0, 150, 136) 20vh, rgb(217, 219, 212) 20vh, rgb(217, 219, 212));
 }
 
 .main {
-  position: relative;
-  overflow-y: scroll;
+	position: relative;
+	overflow-y: scroll;
 }
 
 .img-avatar {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 /* ~ UTILITIES  */
 
 .grey-color {
-  color: grey;
+	color: grey;
 }
 
 /* ~ CONTACTS LIST SECTION */
@@ -32,66 +32,66 @@ img {
 /* < Top Header */
 
 #top-header {
-  height: 50px;
-  padding-left: 5px;
-  background-color: #eaeaea;
+	height: 50px;
+	padding-left: 5px;
+	background-color: #eaeaea;
 }
 
 #top-header .icons-btn {
-  font-size: 10px;
-  cursor: pointer;
+	font-size: 10px;
+	cursor: pointer;
 }
 /* < Bottom Header */
 
 #bottom-header {
-  height: 50px;
-  padding-left: 5px;
-  background-color: #8edafc;
+	height: 50px;
+	padding-left: 5px;
+	background-color: #8edafc;
 }
 
 #bottom-header .icons-btn {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: white;
-  font-size: 20px;
-  cursor: pointer;
-  color: #8edafc;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: white;
+	font-size: 20px;
+	cursor: pointer;
+	color: #8edafc;
 }
 
 /* < Search Bar */
 #search-bar-container {
-  height: 30px;
-  background-color: white;
+	height: 30px;
+	background-color: white;
 }
 
 #search-bar-container button i {
-  font-size: 15px;
-  border: 0;
-  color: grey;
+	font-size: 15px;
+	border: 0;
+	color: grey;
 }
 
 #search-bar {
-  height: 25px;
-  width: calc(100% - 50px);
+	height: 25px;
+	width: calc(100% - 60px);
 }
 
 /* < Main */
 
 #contacts-section .main {
-  background-color: #eaeaea;
-  height: calc(95vh - 130px);
+	background-color: #eaeaea;
+	height: calc(95vh - 130px);
 }
 
 /* ~ CHAT SECTION */
 
 /* < Header */
 #chat-section header {
-  height: 50px;
-  background-color: #eaeaea;
+	height: 50px;
+	background-color: #eaeaea;
 }
 /* < Main */
 #chat-section .main {
-  background-image: url(img/mine.jpg);
-  height: calc(95vh - 50px);
+	background-image: url(img/mine.jpg);
+	height: calc(95vh - 50px);
 }
