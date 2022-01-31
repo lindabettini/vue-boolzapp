@@ -12,18 +12,18 @@
 /* ~ CONTACTS LIST SECTION */
 
 #contacts-section .main {
-  background-color: burlywood;
+  background-color: #eaeaea;
   height: calc(95vh - 125px);
 }
 
 #contacts-section .top-header {
   height: 50px;
-  background-color: blue;
+  background-color: #eaeaea;
 }
 
 #contacts-section .bottom-header {
   height: 50px;
-  background-color: violet;
+  background-color: #8edafc;
 }
 
 #search-bar {
@@ -33,11 +33,11 @@
 
 /* ~ CHAT SECTION */
 #chat-section .main {
-  background-color: orangered;
+  background-image: url(img/mine.jpg);
   height: calc(95vh - 50px);
 }
 
 #chat-section header {
   height: 50px;
-  background-color: green;
+  background-color: #eaeaea;
 }
