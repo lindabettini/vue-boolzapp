@@ -59,6 +59,22 @@ img {
   color: #8edafc;
 }
 
+/* < Search Bar */
+#search-bar-container {
+  background-color: white;
+}
+
+#search-bar-container button i {
+  font-size: 15px;
+  border: 0;
+  color: grey;
+}
+
+#search-bar {
+  height: 25px;
+  width: calc(100% - 50px);
+}
+
 /* < Main */
 
 #contacts-section .main {
@@ -77,20 +93,4 @@ img {
 #chat-section .main {
   background-image: url(img/mine.jpg);
   height: calc(95vh - 50px);
-}
-
-/* ~ SEARCH BAR */
-#search-bar-container {
-  background-color: white;
-}
-
-#search-bar-container button i {
-  font-size: 15px;
-  border: 0;
-  color: grey;
-}
-
-#search-bar {
-  height: 25px;
-  width: calc(100% - 50px);
 }
