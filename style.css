@@ -86,11 +86,20 @@ img {
 	width: calc(100% - 60px);
 }
 
-/* < Main */
+/* < Contacts-section _Main_ */
 
 #contacts-section .main {
 	background-color: #eaeaea;
 	height: calc(95vh - 130px);
+}
+
+#contacts-section li {
+	background-color: white;
+}
+
+#contacts-section li:hover {
+	background-color: #eaeaea;
+	cursor: pointer;
 }
 
 /* ~ CHAT SECTION */
@@ -100,7 +109,7 @@ img {
 	height: 50px;
 	background-color: #eaeaea;
 }
-/* < Main */
+/* < Chat-section _Main_ */
 
 #chat-section .main {
 	background-image: url(img/mine.jpg);
