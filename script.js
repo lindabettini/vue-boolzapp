@@ -26,11 +26,11 @@ const root = new Vue({
         name: 'Luisa',
         avatar: '_4',
       },
-    ]
+    ],
   },
-  methods:{},
+  methods:{    
+    
+  }
+
 });
 
-const data = {
-
-  }
