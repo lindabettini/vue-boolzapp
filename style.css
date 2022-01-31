@@ -93,6 +93,7 @@ img {
 #search-bar {
 	height: 25px;
 	width: calc(100% - 60px);
+	font-size: 12px;
 }
 
 /* < Contacts-section _Main_ */
