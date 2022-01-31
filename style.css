@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 .container-fluid {
   max-width: 100vw;
   height: 100vh;
@@ -9,6 +13,13 @@
   overflow-y: scroll;
 }
 
+.img-avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 /* ~ CONTACTS LIST SECTION */
 
 #contacts-section .main {
@@ -16,12 +27,12 @@
   height: calc(95vh - 125px);
 }
 
-#contacts-section .top-header {
+#top-header {
   height: 50px;
   background-color: #eaeaea;
 }
 
-#contacts-section .bottom-header {
+#bottom-header {
   height: 50px;
   background-color: #8edafc;
 }
