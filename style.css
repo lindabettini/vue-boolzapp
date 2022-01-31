@@ -148,7 +148,7 @@ img {
 
 /* < Write new message area */
 
-#write-message-container {
+#write-message-area {
 	height: 50px;
 	position: absolute;
 	bottom: 0;
@@ -156,7 +156,7 @@ img {
 	background-color: #eaeaea;
 }
 
-#write-message-container i {
+#write-message-area i {
 	font-size: 20px;
 }
 
