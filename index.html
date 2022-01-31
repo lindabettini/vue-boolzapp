@@ -54,7 +54,8 @@
                                 <button type="button" class="btn"><i class="fas fa-search"></i></button>
                                 <input id="search-bar" type="text">
                             </div>
-                            <!-- MAIN (Contacts List)-->
+                            <!-- MAIN-->
+                            <!-- Contacts List -->
                             <div class="main">
                                 <ul class="list-unstyled">
                                     <li v-for="contact in contacts" class="p-1">
@@ -83,14 +84,15 @@
                                     <i class="fas fa-ellipsis-v fa-2x grey-color p-1 me-3"></i>
                                 </div>
                             </header>
-                            <!-- Messages Window -->
+                            <!-- MAIN -->
                             <div class="main position-relative">
+                                <!-- Messages Window -->
                                 <div id="messages-window" class="d-flex flex-column">
                                     <div class="message received align-self-end">Hai portato fuori il cane?</div>
                                     <div class="message sent">Certo</div>
                                 </div>
-                                <!-- Write New Message Area -->
-                                <div id="write-message-area"
+                                <!-- Type New Message Area -->
+                                <div id="type-message-area"
                                     class="p-1 d-flex justify-content-evenly align-items-center">
                                     <i class="far fa-smile grey-color"></i>
                                     <input id="chat-input" type="text" placeholder="Scrivi un messaggio">
