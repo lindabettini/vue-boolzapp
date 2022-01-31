@@ -8,6 +8,10 @@ img {
 	background: linear-gradient(to bottom, rgb(0, 150, 136) 20vh, rgb(217, 219, 212) 20vh, rgb(217, 219, 212));
 }
 
+.col-8 {
+	border-left: 1.5px solid blue;
+}
+
 .main {
 	position: relative;
 	overflow-y: scroll;
@@ -91,6 +95,7 @@ img {
 	background-color: #eaeaea;
 }
 /* < Main */
+
 #chat-section .main {
 	background-image: url(img/mine.jpg);
 	height: calc(95vh - 50px);
