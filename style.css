@@ -75,6 +75,12 @@ img {
 	color: grey;
 }
 
+#search-bar-container.btn-check:focus + .btn,
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+
 #search-bar {
 	height: 25px;
 	width: calc(100% - 60px);
