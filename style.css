@@ -14,10 +14,17 @@ img {
 }
 
 .img-avatar {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
+}
+
+/* ~ UTILITIES  */
+
+.grey-color {
+  color: grey;
 }
 
 /* ~ CONTACTS LIST SECTION */
@@ -35,6 +42,11 @@ img {
 #bottom-header {
   height: 50px;
   background-color: #8edafc;
+}
+
+.icons-btn {
+  font-size: 10px;
+  cursor: pointer;
 }
 
 #search-bar {
