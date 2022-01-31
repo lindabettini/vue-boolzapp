@@ -123,6 +123,9 @@ img {
 #chat-section .main {
 	background-image: url(img/mine.jpg);
 	height: calc(95vh - 50px);
+}
+
+#messages-window {
 	padding: 30px 60px;
 }
 
@@ -139,4 +142,24 @@ img {
 
 .message.sent {
 	background-color: white;
+}
+
+#write-message-container {
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #eaeaea;
+}
+
+#write-message-container i {
+	font-size: 20px;
+}
+
+#chat-text {
+	width: 80%;
+	height: 100%;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
 }

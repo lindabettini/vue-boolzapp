@@ -83,11 +83,21 @@
                                     <i class="fas fa-ellipsis-v fa-2x grey-color p-1 me-3"></i>
                                 </div>
                             </header>
-                            <div class="main d-flex flex-column">
-
-                                <div class="message received align-self-end">Hai portato fuori il cane?</div>
-                                <div class="message sent">Certo</div>
+                            <!-- Chat -->
+                            <div class="main position-relative">
+                                <div id="messages-window" class="d-flex flex-column">
+                                    <div class="message received align-self-end">Hai portato fuori il cane?</div>
+                                    <div class="message sent">Certo</div>
+                                </div>
+                                <!-- Input Text's Chat -->
+                                <div id="write-message-container"
+                                    class="p-1 d-flex justify-content-evenly align-items-center">
+                                    <i class="far fa-smile grey-color"></i>
+                                    <input id="chat-text" type="text" placeholder="Scrivi un messaggio">
+                                    <i class="fas fa-microphone grey-color"></i>
+                                </div>
                             </div>
+
                         </section>
                     </div>
                 </div>
