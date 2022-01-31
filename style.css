@@ -11,9 +11,9 @@
 
 /* ~ CONTACTS LIST SECTION */
 
-#contacts-section {
+#contacts-section .main {
   background-color: burlywood;
-  height: calc(100vh - 125px);
+  height: calc(95vh - 125px);
 }
 
 #contacts-section .top-header {
@@ -32,9 +32,9 @@
 }
 
 /* ~ CHAT SECTION */
-#chat-section {
+#chat-section .main {
   background-color: orangered;
-  height: calc(100vh - 50px);
+  height: calc(95vh - 50px);
 }
 
 #chat-section header {
