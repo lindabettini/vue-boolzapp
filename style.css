@@ -1,0 +1,5 @@
+#body-bg {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(0, 150, 136) 20vh, rgb(217, 219, 212) 20vh, rgb(217, 219, 212));
+}

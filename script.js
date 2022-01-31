@@ -1,4 +1,10 @@
-const data = {
+console.log('Vue ok', Vue);
+
+Vue.config.devtools = true;
+
+const root = new Vue({
+  el: '#root',
+  data: {
     user: {
       name: 'Nome Utente',
       avatar: '_io'
@@ -21,4 +27,10 @@ const data = {
         avatar: '_4',
       },
     ]
+  },
+  methods:{},
+});
+
+const data = {
+
   }
