@@ -17,6 +17,7 @@
 
 #contacts-section {
   background-color: burlywood;
+  height: calc(100vh - 125px);
 }
 
 #contacts-section .top-header {
@@ -30,13 +31,14 @@
 }
 
 #search-bar {
+  height: 25px;
   width: 100%;
 }
 
 /* ~ CHAT SECTION */
 #chat-section {
   background-color: orangered;
-  flex-grow: 1;
+  height: calc(100vh - 50px);
 }
 
 #chat-section header {
