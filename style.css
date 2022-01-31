@@ -4,8 +4,11 @@
   background: linear-gradient(to bottom, rgb(0, 150, 136) 20vh, rgb(217, 219, 212) 20vh, rgb(217, 219, 212));
 }
 
+.container {
+  height: 100vh;
+}
+
 .main {
-  height: 75vh;
   position: relative;
   overflow-y: scroll;
 }
@@ -16,17 +19,27 @@
   background-color: burlywood;
 }
 
-#contacts-section header {
-  height: 15vh;
+#contacts-section .top-header {
+  height: 50px;
   background-color: blue;
+}
+
+#contacts-section .bottom-header {
+  height: 50px;
+  background-color: violet;
+}
+
+#search-bar {
+  width: 100%;
 }
 
 /* ~ CHAT SECTION */
 #chat-section {
   background-color: orangered;
+  flex-grow: 1;
 }
 
 #chat-section header {
-  height: 15vh;
+  height: 50px;
   background-color: green;
 }
