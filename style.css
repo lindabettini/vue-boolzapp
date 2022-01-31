@@ -123,4 +123,20 @@ img {
 #chat-section .main {
 	background-image: url(img/mine.jpg);
 	height: calc(95vh - 50px);
+	padding: 30px 60px;
+}
+
+.message {
+	display: inline-block;
+	width: 40%;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.message.received {
+	background-color: rgb(213, 249, 186);
+}
+
+.message.sent {
+	background-color: white;
 }
