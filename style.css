@@ -4,10 +4,6 @@
   background: linear-gradient(to bottom, rgb(0, 150, 136) 20vh, rgb(217, 219, 212) 20vh, rgb(217, 219, 212));
 }
 
-.container {
-  height: 100vh;
-}
-
 .main {
   position: relative;
   overflow-y: scroll;
