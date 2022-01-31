@@ -35,6 +35,10 @@ img {
 	font-weight: bold;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 /* ~ CONTACTS LIST SECTION */
 
 /* < Top Header */
