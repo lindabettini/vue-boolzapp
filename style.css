@@ -125,6 +125,8 @@ img {
 	height: calc(95vh - 50px);
 }
 
+/* < Messages Window */
+
 #messages-window {
 	padding: 30px 60px;
 }
@@ -143,6 +145,8 @@ img {
 .message.sent {
 	background-color: white;
 }
+
+/* < Write new message area */
 
 #write-message-container {
 	height: 50px;
