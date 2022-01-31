@@ -51,11 +51,11 @@
                             <!-- MAIN (Contacts List)-->
                             <div class="main">
                                 <ul class="list-unstyled">
-                                    <li v-for="(contact, index) in contacts" class="p-1">
+                                    <li v-for="contact in contacts" class="p-1">
                                         <div class="d-flex align-items-center">
-                                            <img v-for="(contact, avatar) in contacts" class="img-avatar m-2"
-                                                :src="`img/avatar ${contact.avatar} .jpg`" alt="">
+                                            <img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
                                             <span>{{contact.name}}</span>
+                                        </div>
                                     </li>
 
                                 </ul>
