@@ -6,6 +6,7 @@ const root = new Vue({
   el: '#root',
   data: {
     currentIndex: 0,
+    newMessage: '',
     user: {
       name: 'Linda',
       avatar: '_io'
@@ -102,6 +103,13 @@ const root = new Vue({
     this.currentIndex = index; 
   }, 
 
+  addMessage(){
+    const newMessage = this.newMessage.trim(); 
+    if (newMessage) {
+        this.messages.push({ todo: newMessage});
+    }
+    this.newMessage='';
+}
 
   }
 });

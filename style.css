@@ -148,12 +148,12 @@ img {
 	margin: 5px;
 }
 
-.message.received {
+.message.sent {
 	background-color: rgb(213, 249, 186);
 	align-self: flex-end;
 }
 
-.message.sent {
+.message.received {
 	background-color: white;
 	align-self: flex-start;
 }
