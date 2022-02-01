@@ -107,9 +107,15 @@ const root = new Vue({
     const newMessage = this.newMessage.trim(); 
     if (newMessage) {
       this.contacts[this.currentIndex].messages.push({text: newMessage, status: 'sent', date: '10/01/2020 15:30:55'});
+
+      setTimeout(automaticReply, 1000);
+      function automaticReply() {
+        alert('OKOK');
+      }
+
     }
     this.newMessage='';
-    console.log(newMessage);
+    
 }
 
   }
