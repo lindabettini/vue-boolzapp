@@ -94,7 +94,7 @@
 									<div id="messages-container" class="d-flex flex-column">
 										<div v-for="(message, index) in contacts[currentIndex].messages" class="message"
 											:class="message.status">
-											{{message.text}} <div class="text-muted small-text">{{message.date}}</div>
+											{{message.text}} <div class="text-muted small-text text-end">{{message.date}}</div>
 										</div>
 
 									</div>
