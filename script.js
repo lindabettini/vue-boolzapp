@@ -95,29 +95,26 @@ const root = new Vue({
   },
   methods:{ 
 
-  isActive(index) {
-    return index === this.currentIndex;
-  }, 
+    isActive(index) {
+      return index === this.currentIndex;
+    }, 
 
-  setChat(index) {
-    this.currentIndex = index; 
-  }, 
+    setChat(index) {
+      this.currentIndex = index; 
+    }, 
 
-  addMessage(){    
-    const newMessage = this.newMessage.trim(); 
-    if (newMessage) {
-      this.contacts[this.currentIndex].messages.push({text: newMessage, status: 'sent', date: '10/01/2020 15:30:55'});
+    addMessage(){    
+      const newMessage = this.newMessage.trim(); 
+      if (newMessage) {
+        this.contacts[this.currentIndex].messages.push({text: newMessage, status: 'sent', date: '10/01/2020 15:30:55'});
 
-      setTimeout(automaticReply, 1000);
-      function automaticReply() {
-        alert('OKOK');
+        setTimeout(automaticReply, 1000);
+        function automaticReply() {
+          this.contacts[this.currentIndex].messages.push({text: 'ok', status: 'received', date: '10/01/2020 15:30:55'});
+        }
       }
-
+      this.newMessage='';    
     }
-    this.newMessage='';
-    
-}
-
   }
 });
 
