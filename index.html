@@ -27,7 +27,7 @@
                                 <!-- TOP HEADER  -->
                                 <div id="top-header" class="d-flex justify-content-between align-items-center p-1">
                                     <div class="d-flex align-items-center">
-                                        <img class="img-avatar m-2" src="img/avatar_io.jpg" alt="">
+                                        <img class="img-avatar m-2" :src="`img/avatar${user.avatar}.jpg`" alt="">
                                         <span>{{user.name}}</span>
                                     </div>
                                     <!-- Btn Icons -->
@@ -56,7 +56,7 @@
                             </div>
                             <!-- MAIN-->
                             <!-- Contacts List -->
-                            <div class="main">
+                            <div id="contacts-list" class="main">
                                 <ul class="list-unstyled">
                                     <li v-for="contact in contacts" class="p-1">
                                         <div class="d-flex align-items-center">
