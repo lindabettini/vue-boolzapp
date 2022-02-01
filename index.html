@@ -2,110 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>My Boolzapp</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<title>My Boolzapp</title>
 </head>
 
 <body>
-    <div class="container-fluid p-3">
-        <div id="root">
-            <div class="container">
-                <div class="row g-0 justify-content-center align-items-center">
-                    <!-- ~ CONTACTS LIST SECTION-->
-                    <div class="col-4">
-                        <section id="contacts-section">
-                            <header>
-                                <!-- TOP HEADER  -->
-                                <div id="top-header" class="d-flex justify-content-between align-items-center p-1">
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-avatar m-2" :src="`img/avatar${user.avatar}.jpg`" alt="">
-                                        <span>{{user.name}}</span>
-                                    </div>
-                                    <!-- Btn Icons -->
-                                    <div class="icons-btn d-flex justify-content-evenly align-items-center">
-                                        <i class="fas fa-circle-notch fa-2x grey-color p-1"></i>
-                                        <i class="fas fa-comment-alt fa-2x grey-color p-1"></i>
-                                        <i class="fas fa-ellipsis-v fa-2x grey-color p-1"></i>
-                                    </div>
-                                </div>
-                                <!-- BOTTOM HEADER -->
-                                <div id="bottom-header" class="d-flex justify-content-start align-items-center p-1">
-                                    <div class="icons-btn d-flex justify-content-evenly align-items-center m-2">
-                                        <i class="fas fa-bell-slash"></i>
-                                    </div>
-                                    <div>
-                                        <span>Ricevi notifiche di nuovi messaggi</span> <br />
-                                        <span class="underline grey-color">Attiva notifiche dekstop</span>
-                                    </div>
+	<div class="container-fluid p-3">
+		<div id="root">
+			<div class="container">
+				<div class="row g-0 justify-content-center align-items-center">
+					<!-- ~ CONTACTS LIST SECTION-->
+					<div class="col-4">
+						<section id="contacts-section">
+							<header>
+								<!-- TOP HEADER  -->
+								<div id="top-header" class="d-flex justify-content-between align-items-center p-1">
+									<div class="d-flex align-items-center">
+										<img class="img-avatar m-2" :src="`img/avatar${user.avatar}.jpg`" alt="">
+										<span>{{user.name}}</span>
+									</div>
+									<!-- Btn Icons -->
+									<div class="icons-btn d-flex justify-content-evenly align-items-center">
+										<i class="fas fa-circle-notch fa-2x grey-color p-1"></i>
+										<i class="fas fa-comment-alt fa-2x grey-color p-1"></i>
+										<i class="fas fa-ellipsis-v fa-2x grey-color p-1"></i>
+									</div>
+								</div>
+								<!-- BOTTOM HEADER -->
+								<div id="bottom-header" class="d-flex justify-content-start align-items-center p-1">
+									<div class="icons-btn d-flex justify-content-evenly align-items-center m-2">
+										<i class="fas fa-bell-slash"></i>
+									</div>
+									<div>
+										<span>Ricevi notifiche di nuovi messaggi</span> <br />
+										<span class="underline grey-color">Attiva notifiche dekstop</span>
+									</div>
 
-                                </div>
-                            </header>
-                            <!-- SEARCH BAR -->
-                            <div id="search-bar-container" class="d-flex justify-content-start align-items-center">
-                                <button type="button" class="btn"><i class="fas fa-search"></i></button>
-                                <input id="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
-                            </div>
-                            <!-- MAIN-->
-                            <!-- Contacts List -->
-                            <div id="contacts-list" class="main">
-                                <ul class="list-unstyled">
-                                    <li v-for="contact in contacts" class="p-1">
-                                        <div class="d-flex align-items-center">
-                                            <img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
-                                            <span>{{contact.name}}</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- ~ CHAT SECTION -->
-                    <div class="col-8">
-                        <section id="chat-section">
-                            <!-- Header -->
-                            <header class="d-flex justify-content-between align-items-center p-1">
-                                <div class="d-flex align-items-center">
-                                    <img class="img-avatar m-2" src="img/avatar_1.jpg" alt="">
-                                    <span>{{contacts[0].name}}</span>
-                                </div>
-                                <!-- Btn Icons -->
-                                <div class="icons-btn d-flex justify-content-evenly align-items-center">
-                                    <i class="fas fa-search grey-color fa-2x p-1"></i>
-                                    <i class="fas fa-paperclip fa-2x grey-color p-1"></i>
-                                    <i class="fas fa-ellipsis-v fa-2x grey-color p-1 me-3"></i>
-                                </div>
-                            </header>
-                            <!-- MAIN -->
-                            <div class="main position-relative">
-                                <!-- Messages Window -->
-                                <div id="messages-window" class="d-flex flex-column">
-                                    <div class="message received align-self-end">Hai portato fuori il cane?</div>
-                                    <div class="message sent">Certo</div>
-                                </div>
-                                <!-- Type New Message Area -->
-                                <div id="type-message-area"
-                                    class="p-1 d-flex justify-content-evenly align-items-center">
-                                    <i class="far fa-smile grey-color"></i>
-                                    <input id="chat-input" type="text" placeholder="Scrivi un messaggio">
-                                    <i class="fas fa-microphone grey-color"></i>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+								</div>
+							</header>
+							<!-- SEARCH BAR -->
+							<div id="search-bar-container" class="d-flex justify-content-start align-items-center">
+								<button type="button" class="btn"><i class="fas fa-search"></i></button>
+								<input id="search-bar" type="text" placeholder="Cerca o inizia una nuova chat">
+							</div>
+							<!-- MAIN-->
+							<!-- Contacts List -->
+							<div id="contacts-list" class="main">
+								<ul class="list-unstyled">
+									<li v-for="contact in contacts" class="p-1">
+										<div class="d-flex align-items-center">
+											<img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
+											<span>{{contact.name}}</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<!-- ~ CHAT SECTION -->
+					<div class="col-8">
+						<section id="chat-section">
+							<!-- Header -->
+							<header class="d-flex justify-content-between align-items-center p-1">
+								<div class="d-flex align-items-center">
+									<img class="img-avatar m-2" src="img/avatar_1.jpg" alt="">
+									<span>{{contacts[0].name}}</span>
+								</div>
+								<!-- Btn Icons -->
+								<div class="icons-btn d-flex justify-content-evenly align-items-center">
+									<i class="fas fa-search grey-color fa-2x p-1"></i>
+									<i class="fas fa-paperclip fa-2x grey-color p-1"></i>
+									<i class="fas fa-ellipsis-v fa-2x grey-color p-1 me-3"></i>
+								</div>
+							</header>
+							<!-- MAIN -->
+							<div class="main position-relative">
+								<!-- Messages Window -->
+								<div id="messages-window" class="d-flex flex-column">
+									<div class="message received align-self-end">Hai portato fuori il cane?</div>
+									<div class="message sent">Certo</div>
+								</div>
+								<!-- Type New Message Area -->
+								<div id="type-message-area" class="p-1 d-flex justify-content-evenly align-items-center">
+									<i class="far fa-smile grey-color"></i>
+									<input id="chat-input" type="text" placeholder="Scrivi un messaggio">
+									<i class="fas fa-microphone grey-color"></i>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 
 </html>
