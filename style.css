@@ -145,10 +145,12 @@ img {
 
 .message.received {
 	background-color: rgb(213, 249, 186);
+	align-self: flex-end;
 }
 
 .message.sent {
 	background-color: white;
+	align-self: flex-start;
 }
 
 /* < type new message area */

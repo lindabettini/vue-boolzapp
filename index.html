@@ -75,7 +75,7 @@
 							<!-- HEADER -->
 							<header class="d-flex justify-content-between align-items-center p-1">
 								<div class="d-flex align-items-center">
-									<img class="img-avatar m-2" src="img/avatar_1.jpg" alt="">
+									<img v-if="(avatar, index) in contacts" class="img-avatar m-2" src="img/avatar_1.jpg" alt="">
 									<span>{{contacts[0].name}}</span>
 								</div>
 								<!-- Btn Icons -->
@@ -88,9 +88,15 @@
 							<!-- MAIN -->
 							<div class="main position-relative">
 								<!-- Messages Window -->
-								<div id="messages-window" class="d-flex flex-column">
-									<div class="message received align-self-end">Hai portato fuori il cane?</div>
-									<div class="message sent">Certo</div>
+								<div v-if="isVisible(index)" id="messages-window">
+									<div id="messages-container" class="d-flex flex-column">
+										<div v-for="text in messages" :class="{active: isActive(index)}" class="message received">
+											{{contact.text}}
+										</div>
+										<div :class="{active: isActive(index)}" class="message sent">
+											{{contact.text}}
+										</div>
+									</div>
 								</div>
 								<!-- Type New Message Area -->
 								<div id="type-message-area" class="p-1 d-flex justify-content-evenly align-items-center">
