@@ -5,6 +5,7 @@ Vue.config.devtools = true;
 const root = new Vue({
   el: '#root',
   data: {
+    currentIndex: 0,
     user: {
       name: 'Linda',
       avatar: '_io'
@@ -92,7 +93,13 @@ const root = new Vue({
     ],
   },
   methods:{    
-    
+    isActive(index) {
+      return index === this.currentIndex;
+  }, 
+
+  setChat(index) {
+      this.currentIndex = index; 
+  }, 
   }
 
 });

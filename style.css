@@ -96,7 +96,7 @@ img {
 	font-size: 12px;
 }
 
-/* < Contacts-section _Main_ */
+/* < Contacts List _Main_ */
 
 #contacts-section .main {
 	background-color: white;
@@ -110,6 +110,10 @@ img {
 #contacts-section li:hover {
 	background-color: #eaeaea;
 	cursor: pointer;
+}
+
+#contacts-section li.active {
+	background-color: blue;
 }
 
 /* ~ CHAT SECTION */
