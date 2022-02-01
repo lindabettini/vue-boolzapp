@@ -102,9 +102,6 @@ const root = new Vue({
     this.currentIndex = index; 
   }, 
 
-  isVisible(index) {
-    return index === this.currentIndex;
-  }
 
   }
 });

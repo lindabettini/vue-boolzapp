@@ -45,7 +45,7 @@
 									</div>
 									<div>
 										<span>Ricevi notifiche di nuovi messaggi</span> <br />
-										<span class="underline grey-color">Attiva notifiche dekstop</span>
+										<span class="underline text-muted">Attiva notifiche dekstop</span>
 									</div>
 
 								</div>
@@ -94,7 +94,7 @@
 									<div id="messages-container" class="d-flex flex-column">
 										<div v-for="(message, index) in contacts[currentIndex].messages" class="message"
 											:class="message.status">
-											{{message.text}}
+											{{message.text}} <div class="text-muted small-text">{{message.date}}</div>
 										</div>
 
 									</div>
