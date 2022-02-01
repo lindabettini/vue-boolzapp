@@ -106,7 +106,7 @@ const root = new Vue({
   addMessage(){
     const newMessage = this.newMessage.trim(); 
     if (newMessage) {
-        this.messages.push({ todo: newMessage});
+        this.contacts.push({message: newMessage});
     }
     this.newMessage='';
 }

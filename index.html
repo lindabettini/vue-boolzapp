@@ -102,7 +102,8 @@
 								<!-- Type New Message Area -->
 								<div id="type-message-area" class="p-1 d-flex justify-content-evenly align-items-center">
 									<i class="far fa-smile grey-color"></i>
-									<input id="chat-input" type="text" placeholder="Scrivi un messaggio">
+									<input id="chat-input" type="text" v-model="newMessage" placeholder="Scrivi un messaggio"
+										@keyup.enter="addMessage">
 									<i class="fas fa-microphone grey-color"></i>
 								</div>
 							</div>
