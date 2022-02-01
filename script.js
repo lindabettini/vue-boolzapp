@@ -103,12 +103,13 @@ const root = new Vue({
     this.currentIndex = index; 
   }, 
 
-  addMessage(){
+  addMessage(){    
     const newMessage = this.newMessage.trim(); 
     if (newMessage) {
-        this.contacts.push({message: newMessage});
+      this.contacts[this.currentIndex].messages.push({text: newMessage, status: 'sent', date: '10/01/2020 15:30:55'});
     }
     this.newMessage='';
+    console.log(newMessage);
 }
 
   }
