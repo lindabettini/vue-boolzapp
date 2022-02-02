@@ -145,7 +145,7 @@ img {
 
 #chat-section .main {
 	background-image: url(img/mine.jpg);
-	height: calc(95vh - 50px);
+	height: calc(95vh - 100px);
 }
 
 /* < Messages Window */
@@ -177,7 +177,7 @@ img {
 #message-btn {
 	font-size: 12px;
 	color: grey;
-	position: absolute;
+	position: fixed;
 	right: 10px;
 	top: 15px;
 }
@@ -186,8 +186,6 @@ img {
 
 #type-message-area {
 	height: 50px;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	background-color: #eaeaea;
 }
