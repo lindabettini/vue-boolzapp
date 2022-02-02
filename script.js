@@ -9,7 +9,7 @@ const root = new Vue({
   data: {
     currentIndex: 0,
     newMessage: '',
-    now: dayjs(),
+    now: dayjs().format('DD/MM/YYYY HH:mm:ss'),
     user: {
       name: 'Linda',
       avatar: '_io'
@@ -102,7 +102,7 @@ const root = new Vue({
       return index === this.currentIndex;
     }, 
 
-    setChat(index) {
+    setCurrentIndex(index) {
       this.currentIndex = index; 
     }, 
 
@@ -110,14 +110,17 @@ const root = new Vue({
       const newMessage = this.newMessage.trim(); 
       if (newMessage) {
         this.contacts[this.currentIndex].messages.push({text: newMessage, status: 'sent', date: this.now});
-
-        setTimeout( () => {
+       
+        setTimeout(() => {
           this.contacts[this.currentIndex].messages.push({text: 'ok', status: 'received', date: this.now});
         } ,1000); 
       }
       this.newMessage='';    
     }
   }
+
 });
+
+
 
 

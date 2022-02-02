@@ -63,8 +63,8 @@
 							<!-- Contacts List -->
 							<div id="contacts-list" class="main">
 								<ul class="list-unstyled">
-									<li v-for="(contact, index) in contacts" :class="{active: isActive(index)}" @click="setChat(index)"
-										class="p-1">
+									<li v-for="(contact, index) in contacts" :class="{active: isActive(index)}"
+										@click="setCurrentIndex(index)" class="p-1">
 										<div class="d-flex align-items-center">
 											<img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
 											<span>{{contact.name}}</span>
