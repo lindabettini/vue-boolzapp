@@ -103,15 +103,18 @@ const root = new Vue({
       return index === this.currentIndex;
     }, 
 
-    isvisible() {
-    if (this.visible) {
-        return visible;
-       }
-    },
-
     setCurrentIndex(index) {
       this.currentIndex = index; 
     }, 
+
+    isIncluded(contact) { 
+      if (this.searchField === ''){
+        return true;
+      } else {
+        const lowerName = contact.name.toLowerCase();
+        return lowerName.includes(this.searchField);
+      }
+    },
 
     addMessage(){    
       const newMessage = this.newMessage.trim(); 
@@ -125,7 +128,7 @@ const root = new Vue({
       }
       this.newMessage='';    
     },
-  },
+  }
 
 });
 
