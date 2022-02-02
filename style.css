@@ -108,6 +108,13 @@ img {
 
 #contacts-section li {
 	background-color: white;
+	position: relative;
+}
+
+#last-message-date {
+	position: absolute;
+	right: 5px;
+	top: 15px;
 }
 
 #contacts-section li:hover {
