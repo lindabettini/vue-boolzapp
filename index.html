@@ -65,6 +65,7 @@
 									<li id="contact-item" v-for="(contact, index) in contacts" v-if="isIncluded(contact)"
 										:class="[{active: active(index)}, {visible: contact.visible}]" @click="setCurrentIndex(index)"
 										class="visible p-1">
+										<!-- List Item Content -->
 										<div class="row align-items-center">
 											<div class="col-2"><img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
 											</div>
@@ -107,6 +108,7 @@
 										<div v-for="(message, index) in contacts[currentIndex].messages" class="message"
 											:class="message.status">
 											{{message.text}} <div class="text-muted small-text text-end">{{message.date}}</div>
+											<i id="message-btn" role="button" class="fas fa-chevron-down"></i>
 										</div>
 
 									</div>
