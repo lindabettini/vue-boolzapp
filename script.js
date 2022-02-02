@@ -9,6 +9,7 @@ const root = new Vue({
   data: {
     currentIndex: 0,
     newMessage: '',
+    searchField:'',
     now: dayjs().format('DD/MM/YYYY HH:mm:ss'),
     user: {
       name: 'Linda',
