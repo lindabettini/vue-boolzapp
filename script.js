@@ -128,6 +128,7 @@ const root = new Vue({
       }
       this.newMessage='';    
     },
+
   }
 
 });

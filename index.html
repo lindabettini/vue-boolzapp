@@ -67,8 +67,8 @@
 										class="visible p-1">
 										<div class="d-flex align-items-center">
 											<img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
-											<span>{{contact.name}}</span>
-											<div>{{contact[messages].text[-1]}}</div>
+											<span>{{contact.name}}</span> <br>
+											<div>{{contact.messages[contact.messages.length - 1].text.slice(0, 30)+'...'}}</div>
 										</div>
 									</li>
 								</ul>
