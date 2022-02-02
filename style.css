@@ -120,6 +120,14 @@ img {
 	background-color: #eaeaea;
 }
 
+#contacts-section li {
+	display: none;
+}
+
+#contacts-section li.visible {
+	display: list-item;
+}
+
 /* ~ CHAT SECTION */
 
 /* < Header */

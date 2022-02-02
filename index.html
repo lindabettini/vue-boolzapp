@@ -51,7 +51,6 @@
 										<span>Ricevi notifiche di nuovi messaggi</span> <br />
 										<span class="underline text-muted">Attiva notifiche dekstop</span>
 									</div>
-
 								</div>
 							</header>
 							<!-- SEARCH BAR -->
@@ -63,8 +62,9 @@
 							<!-- Contacts List -->
 							<div id="contacts-list" class="main">
 								<ul class="list-unstyled">
-									<li v-for="(contact, index) in contacts" :class="{active: active(index)}"
-										@click="setCurrentIndex(index)" class="p-1">
+									<li id="contact-item" v-for="(contact, index) in contacts"
+										:class="[{active: active(index)}, {visible: isVisible}]" @click="setCurrentIndex(index)"
+										class="visible p-1">
 										<div class="d-flex align-items-center">
 											<img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
 											<span>{{contact.name}}</span>

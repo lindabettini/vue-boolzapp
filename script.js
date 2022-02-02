@@ -82,7 +82,7 @@ const root = new Vue({
       {
         name: 'Pietro',
         avatar: '_4',
-        visible: false,
+        visible: true,
         messages: [{
           date: '10/01/2020 15:30:55',
           text: 'Lo sai che ha aperto una nuova pizzeria?',
@@ -103,6 +103,12 @@ const root = new Vue({
       return index === this.currentIndex;
     }, 
 
+    isvisible() {
+    if (this.visible) {
+        return visible;
+       }
+    },
+
     setCurrentIndex(index) {
       this.currentIndex = index; 
     }, 
@@ -118,7 +124,7 @@ const root = new Vue({
         } ,1000); 
       }
       this.newMessage='';    
-    }
+    },
   },
 
 });
