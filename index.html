@@ -65,10 +65,15 @@
 									<li id="contact-item" v-for="(contact, index) in contacts" v-if="isIncluded(contact)"
 										:class="[{active: active(index)}, {visible: contact.visible}]" @click="setCurrentIndex(index)"
 										class="visible p-1">
-										<div class="d-flex align-items-center">
-											<img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
-											<span>{{contact.name}}</span> <br>
-											<div>{{contact.messages[contact.messages.length - 1].text.slice(0, 30)+'...'}}</div>
+										<div class="row align-items-center">
+											<div class="col-2"><img class="img-avatar m-2" :src="`img/avatar${contact.avatar}.jpg`" alt="">
+											</div>
+											<div class="col-10">
+												<div>{{contact.name}}</div>
+												<div class="small-text text-muted">{{contact.messages[contact.messages.length - 1].text.slice(0,
+													30)+'...'}}
+												</div>
+											</div>
 										</div>
 									</li>
 								</ul>
