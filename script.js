@@ -18,7 +18,7 @@ const root = new Vue({
       {
         name: 'Michele',
         avatar: '_1',
-        visible: false,
+        visible: true,
         messages: [{
           date: '10/01/2020 15:30:55',
           text: 'Hai portato a spasso il cane?',
@@ -39,7 +39,7 @@ const root = new Vue({
       {
         name: 'Fabio',
         avatar: '_2',
-        visible: false,
+        visible: true,
         messages: [{
           date: '20/03/2020 16:30:00',
           text: 'Ciao come stai?',
@@ -53,14 +53,14 @@ const root = new Vue({
         {
           date: '20/03/2020 16:35:00',
           text: 'Mi piacerebbe ma devo andare a fare la spesa.',
-          status: 'received'
+          status: 'sent'
         }
         ],
       },
       {
         name: 'Samuele',
         avatar: '_3',
-        visible: false,
+        visible: true,
         messages: [{
           date: '28/03/2020 10:10:40',
           text: 'La Marianna va in campagna',
@@ -98,7 +98,7 @@ const root = new Vue({
   },
   methods:{ 
 
-    isActive(index) {
+    active(index) {
       return index === this.currentIndex;
     }, 
 
@@ -108,6 +108,7 @@ const root = new Vue({
 
     addMessage(){    
       const newMessage = this.newMessage.trim(); 
+
       if (newMessage) {
         this.contacts[this.currentIndex].messages.push({text: newMessage, status: 'sent', date: this.now});
        
@@ -117,7 +118,7 @@ const root = new Vue({
       }
       this.newMessage='';    
     }
-  }
+  },
 
 });
 
